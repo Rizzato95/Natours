@@ -1,0 +1,40 @@
+.btn {
+  &:link,
+  &:visited {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color:$color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+      color: $color-grey-dark;
+    }
+  }
+
+  &--animated {
+    -webkit-animation: moveInButton .5s ease-out .5s;
+    animation: moveInButton .5s ease-out .5s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+  }
+}
