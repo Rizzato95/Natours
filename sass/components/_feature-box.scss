@@ -30,7 +30,6 @@
 
     &:hover {
         transform: scale(1.05) translateY(-1rem);
-
-
+        background-color: rgba($color-white, .9);
     }
 }
