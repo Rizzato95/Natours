@@ -118,7 +118,6 @@
 
     // BACK SIDE STYLING
     &__cta {
-        position: absolute;
         @include center-horizontal-vertical();
         width: 90%;
         text-align: center;
