@@ -8,9 +8,13 @@
     z-index: 9999;
     
     opacity: 0;
-    visibility: hidden;
-
+    visibility: hidden;  
     transition: all .5s;
+    
+    @supports(backdrop-filter: blur(10px)) {
+        background-color: rgba($color-black, .3);
+        backdrop-filter: blur(10px);
+    }
 
     &__content {
         @include center-horizontal-vertical;
